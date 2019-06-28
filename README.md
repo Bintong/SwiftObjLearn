@@ -14,7 +14,7 @@ Swift 学习，按照对于OC的开发过程中常用的技术点进行学习
 | Push&Pop  |  DetailPushController  | 基础控件 |
 | CustomPopView  |  PopView  | 自定义view |
 | CommonCategory&Base  |  UIView+SetRect  | 类别的建立 |
-| Carthage&net  |  *.swift  | 网络相关 |
+| Carthage&net  |  swift 文件  | 网络相关 |
 | CustomCell  |  CustomCell.swift  | 自定义cell | 
 
 ###详细
