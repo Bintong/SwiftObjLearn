@@ -18,8 +18,6 @@ Swift 学习，按照对于OC的开发过程中常用的技术点进行学习
 | CustomCell  |  CustomCell.swift  | 自定义cell | 
 
 
-###详细
-
 简书链接
 https://www.jianshu.com/p/842423ab88e8
 
