@@ -10,7 +10,7 @@ import UIKit
 
 class FirstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    var names = ["基本控件","网络请求","c","d","e","f","g","h"];
+    var names = ["基本控件","网络请求","Login","d","e","f","g","h"];
     var tableView:UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,7 +58,11 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
             let net = TestNetViewController()
             self.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(net, animated: true)
-        } else {
+        }  else if indexPath.row == 2 {
+            let login = LoginViewController()
+            self.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(login, animated: true)
+        }else {
             let cell = tableView.cellForRow(at: indexPath)
             if cell?.accessoryType == UITableViewCell.AccessoryType.none {
                 cell?.accessoryType = .checkmark

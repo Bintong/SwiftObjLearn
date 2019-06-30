@@ -28,6 +28,7 @@ class TestNetViewController: UIViewController,UITableViewDelegate,UITableViewDat
         let headerLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 30))
         headerLabel.text = "Header-----------"
         self.tableView?.tableHeaderView = headerLabel;
+        self.tableView.tableFooterView = UIView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 1))
         self.view.addSubview(tableView)
     }
     

@@ -26,13 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftObjLearn/Carthage&amp;net/TestNetViewController.swift"
-            timestampString = "583380167.097469"
+            timestampString = "583465162.424889"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "testNet()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -42,12 +42,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftObjLearn/Carthage&amp;net/DataStructModel.swift"
-            timestampString = "583380167.097939"
+            timestampString = "583465162.424975"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
             endingLineNumber = "21"
             landmarkName = "init(jsonData:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftObjLearn/Former/LoginViewController.swift"
+            timestampString = "583465162.425032"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "buildContent()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
