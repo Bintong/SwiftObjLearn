@@ -219,7 +219,7 @@ https://www.jianshu.com/p/7e2e257b7662
 
 [RxSwift 官方文档](https://github.com/ReactiveX/RxSwift )
 
- [RxSwift 翻译文档](/RxSwift 官方文档翻译)
+[RxSwift 翻译文档](RxSwift 官方文档翻译)
 
 ## 语言基础 
 
