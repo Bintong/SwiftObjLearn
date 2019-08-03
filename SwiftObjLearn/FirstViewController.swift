@@ -19,10 +19,10 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         self.tableView?.dataSource = self;
         
         let headerLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 30))
-        headerLabel.text = "Header-----------"
+        headerLabel.text = "Header"
         self.tableView?.tableHeaderView = headerLabel;
         self.view.addSubview(tableView)
-        // Do any additional setup after loading the view.
+        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
