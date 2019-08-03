@@ -26,6 +26,6 @@ Swift 学习，按照对于OC的开发过程中常用的技术点进行学习
 https://www.jianshu.com/p/842423ab88e8
 
 ## 文档
-This is an [Swift基础学习](https://github.com/Bintong/SwiftObjLearn/blob/master/Swift%E5%AD%A6%E4%B9%A0(1).md). 
+ [Swift基础学习](https://github.com/Bintong/SwiftObjLearn/blob/master/Swift%E5%AD%A6%E4%B9%A0(1).md). 
 
 
