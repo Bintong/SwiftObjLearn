@@ -27,7 +27,7 @@ KVO observing, async operations and streams 都在序列的抽象下统一。 �
 * [Rx背后的数学](Documentation/MathBehindRx.md)
 * [什么是冷热observable sequences](Documentation/HotAndColdObservables.md)
 
-######… 安装
+###### ... 安装
 
 * 安装 RxSwift/RxCocoa  在app 中. [Installation Guide](#installation)
 
