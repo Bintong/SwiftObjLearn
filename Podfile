@@ -7,6 +7,8 @@ target 'SwiftObjLearn' do
   pod 'Moya'
   pod 'SwiftyJSON'
   pod 'Kingfisher'
+  pod 'RxCocoa'
+  pod 'RxSwift'
   # Pods for SwiftObjLearn
 
   target 'SwiftObjLearnTests' do
