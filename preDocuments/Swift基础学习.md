@@ -112,6 +112,12 @@ https://blog.csdn.net/qq_30932479/article/details/80517518
 
 和oc 不一样的是逗号分隔
 
+
+
+## Class Extension Struct
+
+
+
 ## 宏定义
 
 ```swift
@@ -192,6 +198,12 @@ cell 自定义过程中，这段代码的作用
 2  as? 关键字 https://www.cnblogs.com/dukework/p/6553714.html
 
 
+
+
+
+## 遇到的错误
+
+Thread 1: Fatal error: Unexpectedly found nil while unwrapping an Optional value
 
 ## 功能-登陆
 

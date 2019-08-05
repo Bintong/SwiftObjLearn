@@ -10,7 +10,7 @@ import UIKit
 
 class FirstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    var names = ["基本控件","网络请求","Login","d","e","f","g","h"];
+    var names = ["基本控件","网络请求","Login","车辆信息","e","f","g","h"];
     var tableView:UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,6 +62,10 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
             let login = LoginViewController()
             self.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(login, animated: true)
+        } else if indexPath.row == 3 {
+            let infoCtr = CarInfoInputController()
+            self.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(infoCtr, animated:true)
         }else {
             let cell = tableView.cellForRow(at: indexPath)
             if cell?.accessoryType == UITableViewCell.AccessoryType.none {
