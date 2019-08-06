@@ -10,7 +10,7 @@ import UIKit
 
 class FirstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    var names = ["基本控件","网络请求","Login","车辆信息","RXSwift","f","g","h"];
+    var names = ["基本控件","网络请求","Login","车辆信息","RXSwift","布局SnapKit","g","h"];
     var tableView:UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,6 +70,10 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
             let rxMain = PeopleViewController()
             self.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(rxMain, animated:true)
+        } else if indexPath.row == 5 {
+            let autolayoutCtr =  SnapKitTestController()
+            self.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(autolayoutCtr, animated:true)
         } else {
             let cell = tableView.cellForRow(at: indexPath)
             if cell?.accessoryType == UITableViewCell.AccessoryType.none {

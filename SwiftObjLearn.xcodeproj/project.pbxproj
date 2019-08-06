@@ -22,6 +22,7 @@
 		A61498F822F94E810036780F /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61498F722F94E810036780F /* DataModel.swift */; };
 		A61498FC22F9663D0036780F /* doOnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61498FA22F9663D0036780F /* doOnViewController.swift */; };
 		A61498FD22F9663D0036780F /* doOnViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61498FB22F9663D0036780F /* doOnViewController.xib */; };
+		A63A9D4D22F9E88000C17B77 /* SnapKitTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63A9D4C22F9E88000C17B77 /* SnapKitTestController.swift */; };
 		A68C206E22F96EDE003E9B03 /* DisposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C206C22F96EDE003E9B03 /* DisposeViewController.swift */; };
 		A68C206F22F96EDE003E9B03 /* DisposeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68C206D22F96EDE003E9B03 /* DisposeViewController.xib */; };
 		A68C207322F96F4D003E9B03 /* bindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C207122F96F4D003E9B03 /* bindViewController.swift */; };
@@ -87,6 +88,7 @@
 		A61498F722F94E810036780F /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		A61498FA22F9663D0036780F /* doOnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doOnViewController.swift; sourceTree = "<group>"; };
 		A61498FB22F9663D0036780F /* doOnViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = doOnViewController.xib; sourceTree = "<group>"; };
+		A63A9D4C22F9E88000C17B77 /* SnapKitTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitTestController.swift; sourceTree = "<group>"; };
 		A68C206C22F96EDE003E9B03 /* DisposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposeViewController.swift; sourceTree = "<group>"; };
 		A68C206D22F96EDE003E9B03 /* DisposeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisposeViewController.xib; sourceTree = "<group>"; };
 		A68C207122F96F4D003E9B03 /* bindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bindViewController.swift; sourceTree = "<group>"; };
@@ -211,6 +213,14 @@
 			path = doOn;
 			sourceTree = "<group>";
 		};
+		A63A9D4B22F9E84600C17B77 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				A63A9D4C22F9E88000C17B77 /* SnapKitTestController.swift */,
+			);
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
 		A68C206722F96DED003E9B03 /* Dispose */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +290,7 @@
 		A6D21E9322C064C900A8D4DF /* SwiftObjLearn */ = {
 			isa = PBXGroup;
 			children = (
+				A63A9D4B22F9E84600C17B77 /* SnapKit */,
 				A61498E222F917430036780F /* RxSwiftTestFiles */,
 				A6C551F022C5E65700B1BAA2 /* Former */,
 				A6C551ED22C5CD9100B1BAA2 /* ConstDefine */,
@@ -652,6 +663,7 @@
 				A6C551EF22C5CDB700B1BAA2 /* Const_UI.swift in Sources */,
 				A6C551F422C5E9B500B1BAA2 /* NormalTableViewCell.swift in Sources */,
 				A61498E522F917780036780F /* ObervableViewController.swift in Sources */,
+				A63A9D4D22F9E88000C17B77 /* SnapKitTestController.swift in Sources */,
 				A6D21ED222C1C2E900A8D4DF /* UIView+SetRect.swift in Sources */,
 				A6D21E9522C064C900A8D4DF /* AppDelegate.swift in Sources */,
 				A61498DD22F8111F0036780F /* CarInfoInputController.swift in Sources */,

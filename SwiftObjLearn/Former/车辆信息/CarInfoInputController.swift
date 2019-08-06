@@ -8,6 +8,8 @@
 
 import UIKit
 
+let kBottomHeight: CGFloat = 70
+
 class CarInfoInputController: UIViewController,UITableViewDelegate,UITableViewDataSource  {
     
     
@@ -15,9 +17,10 @@ class CarInfoInputController: UIViewController,UITableViewDelegate,UITableViewDa
     var views  : [UIView]  = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.red
+        self.view.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1)
         self.createUI()
         self.buildContentViews()
+        self.creatBottomView()
     }
     func buildContentViews() {
         let headerImgs = CarInfoViewManager.createUploadImages()
@@ -61,11 +64,23 @@ extension CarInfoInputController{
         self.tableView?.dataSource = self
         self.tableView.separatorStyle = .none
         self.tableView.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1)
+        self.tableView.height = kScreenHeight - kBottomHeight - 64
 //        let headerLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 230))
 //        headerLabel.text = "Header-----------"
 //        self.tableView?.tableHeaderView = headerLabel;
 //        self.tableView.tableFooterView = UIView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 1))
         self.view.addSubview(tableView)
+    }
+    
+    func creatBottomView()  {
+        let view = UIView.init(frame: CGRect(x: 0, y: kScreenHeight - kBottomHeight - 64 - 44, width: kScreenWidth, height: kBottomHeight))
+        view.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1)
+        let button = UIButton.init(frame: CGRect(x: 12, y: 12, width: kScreenWidth - 24, height: 50))
+        button.setTitleColor(.white, for: .normal)
+        button.setTitle("保存", for: .normal)
+        button.backgroundColor = .red
+        view.addSubview(button)
+        self.view.addSubview(view)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
