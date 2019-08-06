@@ -11,6 +11,8 @@
 		875CE0D4A4F826B19998B3D1 /* Pods_SwiftObjLearnUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297489510104EDC21F5AACD8 /* Pods_SwiftObjLearnUITests.framework */; };
 		A61498DD22F8111F0036780F /* CarInfoInputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61498DC22F8111F0036780F /* CarInfoInputController.swift */; };
 		A61498DF22F8149D0036780F /* CarInfoViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61498DE22F8149D0036780F /* CarInfoViewManager.swift */; };
+		A61498E522F917780036780F /* ObervableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61498E322F917780036780F /* ObervableViewController.swift */; };
+		A61498E622F917780036780F /* ObervableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61498E422F917780036780F /* ObervableViewController.xib */; };
 		A6C551EF22C5CDB700B1BAA2 /* Const_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C551EE22C5CDB700B1BAA2 /* Const_UI.swift */; };
 		A6C551F222C5E68000B1BAA2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C551F122C5E68000B1BAA2 /* LoginViewController.swift */; };
 		A6C551F422C5E9B500B1BAA2 /* NormalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C551F322C5E9B500B1BAA2 /* NormalTableViewCell.swift */; };
@@ -61,6 +63,8 @@
 		9A140D8190A54704AD3B044D /* Pods-SwiftObjLearnUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftObjLearnUITests.release.xcconfig"; path = "Target Support Files/Pods-SwiftObjLearnUITests/Pods-SwiftObjLearnUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A61498DC22F8111F0036780F /* CarInfoInputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfoInputController.swift; sourceTree = "<group>"; };
 		A61498DE22F8149D0036780F /* CarInfoViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfoViewManager.swift; sourceTree = "<group>"; };
+		A61498E322F917780036780F /* ObervableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObervableViewController.swift; sourceTree = "<group>"; };
+		A61498E422F917780036780F /* ObervableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObervableViewController.xib; sourceTree = "<group>"; };
 		A6C551EE22C5CDB700B1BAA2 /* Const_UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const_UI.swift; sourceTree = "<group>"; };
 		A6C551F122C5E68000B1BAA2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A6C551F322C5E9B500B1BAA2 /* NormalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalTableViewCell.swift; sourceTree = "<group>"; };
@@ -137,6 +141,15 @@
 			path = "车辆信息";
 			sourceTree = "<group>";
 		};
+		A61498E222F917430036780F /* RxSwiftTestFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A61498E322F917780036780F /* ObervableViewController.swift */,
+				A61498E422F917780036780F /* ObervableViewController.xib */,
+			);
+			path = RxSwiftTestFiles;
+			sourceTree = "<group>";
+		};
 		A6C551ED22C5CD9100B1BAA2 /* ConstDefine */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +201,7 @@
 		A6D21E9322C064C900A8D4DF /* SwiftObjLearn */ = {
 			isa = PBXGroup;
 			children = (
+				A61498E222F917430036780F /* RxSwiftTestFiles */,
 				A6C551F022C5E65700B1BAA2 /* Former */,
 				A6C551ED22C5CD9100B1BAA2 /* ConstDefine */,
 				A6C9C9BD22C5A8B4004C1365 /* CustomCell */,
@@ -404,6 +418,7 @@
 			files = (
 				A6D21EA122C064CA00A8D4DF /* LaunchScreen.storyboard in Resources */,
 				A6D21E9E22C064CA00A8D4DF /* Assets.xcassets in Resources */,
+				A61498E622F917780036780F /* ObervableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +560,7 @@
 				A6D21ECF22C0D56D00A8D4DF /* PopView.swift in Sources */,
 				A6C551EF22C5CDB700B1BAA2 /* Const_UI.swift in Sources */,
 				A6C551F422C5E9B500B1BAA2 /* NormalTableViewCell.swift in Sources */,
+				A61498E522F917780036780F /* ObervableViewController.swift in Sources */,
 				A6D21ED222C1C2E900A8D4DF /* UIView+SetRect.swift in Sources */,
 				A6D21E9522C064C900A8D4DF /* AppDelegate.swift in Sources */,
 				A61498DD22F8111F0036780F /* CarInfoInputController.swift in Sources */,

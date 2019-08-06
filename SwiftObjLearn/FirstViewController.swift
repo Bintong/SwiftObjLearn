@@ -10,7 +10,7 @@ import UIKit
 
 class FirstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    var names = ["基本控件","网络请求","Login","车辆信息","e","f","g","h"];
+    var names = ["基本控件","网络请求","Login","车辆信息","RXSwift","f","g","h"];
     var tableView:UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
