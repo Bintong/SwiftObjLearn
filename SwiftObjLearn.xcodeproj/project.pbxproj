@@ -13,6 +13,19 @@
 		A61498DF22F8149D0036780F /* CarInfoViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61498DE22F8149D0036780F /* CarInfoViewManager.swift */; };
 		A61498E522F917780036780F /* ObervableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61498E322F917780036780F /* ObervableViewController.swift */; };
 		A61498E622F917780036780F /* ObervableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61498E422F917780036780F /* ObervableViewController.xib */; };
+		A61498EA22F92D9A0036780F /* SubscribViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61498E822F92D9A0036780F /* SubscribViewController.swift */; };
+		A61498EB22F92D9A0036780F /* SubscribViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61498E922F92D9A0036780F /* SubscribViewController.xib */; };
+		A61498F022F92FD90036780F /* PeopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61498EF22F92FD90036780F /* PeopleModel.swift */; };
+		A61498F222F930390036780F /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61498F122F930390036780F /* PeopleViewModel.swift */; };
+		A61498F522F931810036780F /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61498F322F931810036780F /* PeopleViewController.swift */; };
+		A61498F622F931810036780F /* PeopleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61498F422F931810036780F /* PeopleViewController.xib */; };
+		A61498F822F94E810036780F /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61498F722F94E810036780F /* DataModel.swift */; };
+		A61498FC22F9663D0036780F /* doOnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61498FA22F9663D0036780F /* doOnViewController.swift */; };
+		A61498FD22F9663D0036780F /* doOnViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61498FB22F9663D0036780F /* doOnViewController.xib */; };
+		A68C206E22F96EDE003E9B03 /* DisposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C206C22F96EDE003E9B03 /* DisposeViewController.swift */; };
+		A68C206F22F96EDE003E9B03 /* DisposeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68C206D22F96EDE003E9B03 /* DisposeViewController.xib */; };
+		A68C207322F96F4D003E9B03 /* bindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C207122F96F4D003E9B03 /* bindViewController.swift */; };
+		A68C207422F96F4D003E9B03 /* bindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68C207222F96F4D003E9B03 /* bindViewController.xib */; };
 		A6C551EF22C5CDB700B1BAA2 /* Const_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C551EE22C5CDB700B1BAA2 /* Const_UI.swift */; };
 		A6C551F222C5E68000B1BAA2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C551F122C5E68000B1BAA2 /* LoginViewController.swift */; };
 		A6C551F422C5E9B500B1BAA2 /* NormalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C551F322C5E9B500B1BAA2 /* NormalTableViewCell.swift */; };
@@ -65,6 +78,19 @@
 		A61498DE22F8149D0036780F /* CarInfoViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfoViewManager.swift; sourceTree = "<group>"; };
 		A61498E322F917780036780F /* ObervableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObervableViewController.swift; sourceTree = "<group>"; };
 		A61498E422F917780036780F /* ObervableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObervableViewController.xib; sourceTree = "<group>"; };
+		A61498E822F92D9A0036780F /* SubscribViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribViewController.swift; sourceTree = "<group>"; };
+		A61498E922F92D9A0036780F /* SubscribViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscribViewController.xib; sourceTree = "<group>"; };
+		A61498EF22F92FD90036780F /* PeopleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleModel.swift; sourceTree = "<group>"; };
+		A61498F122F930390036780F /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
+		A61498F322F931810036780F /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		A61498F422F931810036780F /* PeopleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeopleViewController.xib; sourceTree = "<group>"; };
+		A61498F722F94E810036780F /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		A61498FA22F9663D0036780F /* doOnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doOnViewController.swift; sourceTree = "<group>"; };
+		A61498FB22F9663D0036780F /* doOnViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = doOnViewController.xib; sourceTree = "<group>"; };
+		A68C206C22F96EDE003E9B03 /* DisposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposeViewController.swift; sourceTree = "<group>"; };
+		A68C206D22F96EDE003E9B03 /* DisposeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisposeViewController.xib; sourceTree = "<group>"; };
+		A68C207122F96F4D003E9B03 /* bindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bindViewController.swift; sourceTree = "<group>"; };
+		A68C207222F96F4D003E9B03 /* bindViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = bindViewController.xib; sourceTree = "<group>"; };
 		A6C551EE22C5CDB700B1BAA2 /* Const_UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const_UI.swift; sourceTree = "<group>"; };
 		A6C551F122C5E68000B1BAA2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A6C551F322C5E9B500B1BAA2 /* NormalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalTableViewCell.swift; sourceTree = "<group>"; };
@@ -144,10 +170,63 @@
 		A61498E222F917430036780F /* RxSwiftTestFiles */ = {
 			isa = PBXGroup;
 			children = (
+				A68C207022F96F3C003E9B03 /* bindto */,
+				A68C206722F96DED003E9B03 /* Dispose */,
+				A61498F922F9661D0036780F /* doOn */,
+				A61498EC22F92F580036780F /* Obervable */,
+				A61498E722F92D7C0036780F /* Subscribe */,
+				A61498EF22F92FD90036780F /* PeopleModel.swift */,
+				A61498F122F930390036780F /* PeopleViewModel.swift */,
+				A61498F322F931810036780F /* PeopleViewController.swift */,
+				A61498F422F931810036780F /* PeopleViewController.xib */,
+				A61498F722F94E810036780F /* DataModel.swift */,
+			);
+			path = RxSwiftTestFiles;
+			sourceTree = "<group>";
+		};
+		A61498E722F92D7C0036780F /* Subscribe */ = {
+			isa = PBXGroup;
+			children = (
+				A61498E822F92D9A0036780F /* SubscribViewController.swift */,
+				A61498E922F92D9A0036780F /* SubscribViewController.xib */,
+			);
+			path = Subscribe;
+			sourceTree = "<group>";
+		};
+		A61498EC22F92F580036780F /* Obervable */ = {
+			isa = PBXGroup;
+			children = (
 				A61498E322F917780036780F /* ObervableViewController.swift */,
 				A61498E422F917780036780F /* ObervableViewController.xib */,
 			);
-			path = RxSwiftTestFiles;
+			path = Obervable;
+			sourceTree = "<group>";
+		};
+		A61498F922F9661D0036780F /* doOn */ = {
+			isa = PBXGroup;
+			children = (
+				A61498FA22F9663D0036780F /* doOnViewController.swift */,
+				A61498FB22F9663D0036780F /* doOnViewController.xib */,
+			);
+			path = doOn;
+			sourceTree = "<group>";
+		};
+		A68C206722F96DED003E9B03 /* Dispose */ = {
+			isa = PBXGroup;
+			children = (
+				A68C206C22F96EDE003E9B03 /* DisposeViewController.swift */,
+				A68C206D22F96EDE003E9B03 /* DisposeViewController.xib */,
+			);
+			path = Dispose;
+			sourceTree = "<group>";
+		};
+		A68C207022F96F3C003E9B03 /* bindto */ = {
+			isa = PBXGroup;
+			children = (
+				A68C207122F96F4D003E9B03 /* bindViewController.swift */,
+				A68C207222F96F4D003E9B03 /* bindViewController.xib */,
+			);
+			path = bindto;
 			sourceTree = "<group>";
 		};
 		A6C551ED22C5CD9100B1BAA2 /* ConstDefine */ = {
@@ -418,7 +497,12 @@
 			files = (
 				A6D21EA122C064CA00A8D4DF /* LaunchScreen.storyboard in Resources */,
 				A6D21E9E22C064CA00A8D4DF /* Assets.xcassets in Resources */,
+				A61498FD22F9663D0036780F /* doOnViewController.xib in Resources */,
+				A68C207422F96F4D003E9B03 /* bindViewController.xib in Resources */,
+				A61498F622F931810036780F /* PeopleViewController.xib in Resources */,
 				A61498E622F917780036780F /* ObervableViewController.xib in Resources */,
+				A68C206F22F96EDE003E9B03 /* DisposeViewController.xib in Resources */,
+				A61498EB22F92D9A0036780F /* SubscribViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,11 +636,18 @@
 				A6C551F222C5E68000B1BAA2 /* LoginViewController.swift in Sources */,
 				A6D21EF122C3758100A8D4DF /* AccountService.swift in Sources */,
 				A6D21ECA22C0AD9C00A8D4DF /* MyTabBarViewController.swift in Sources */,
+				A68C206E22F96EDE003E9B03 /* DisposeViewController.swift in Sources */,
+				A61498F522F931810036780F /* PeopleViewController.swift in Sources */,
+				A68C207322F96F4D003E9B03 /* bindViewController.swift in Sources */,
 				A6D21EF322C47DE800A8D4DF /* TestNetViewController.swift in Sources */,
 				A6D21ECC22C0B0CD00A8D4DF /* MyNavViewController.swift in Sources */,
+				A61498EA22F92D9A0036780F /* SubscribViewController.swift in Sources */,
 				A6D21EF922C4BCF500A8D4DF /* DataStructModel.swift in Sources */,
 				A6D21EC622C0A2F100A8D4DF /* DetailPushController.swift in Sources */,
 				A6D21E9922C064C900A8D4DF /* SecondViewController.swift in Sources */,
+				A61498FC22F9663D0036780F /* doOnViewController.swift in Sources */,
+				A61498F022F92FD90036780F /* PeopleModel.swift in Sources */,
+				A61498F222F930390036780F /* PeopleViewModel.swift in Sources */,
 				A6D21ECF22C0D56D00A8D4DF /* PopView.swift in Sources */,
 				A6C551EF22C5CDB700B1BAA2 /* Const_UI.swift in Sources */,
 				A6C551F422C5E9B500B1BAA2 /* NormalTableViewCell.swift in Sources */,
@@ -567,6 +658,7 @@
 				A6C9C9BF22C5A8D1004C1365 /* CustomCell.swift in Sources */,
 				A61498DF22F8149D0036780F /* CarInfoViewManager.swift in Sources */,
 				A6D21E9722C064C900A8D4DF /* FirstViewController.swift in Sources */,
+				A61498F822F94E810036780F /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

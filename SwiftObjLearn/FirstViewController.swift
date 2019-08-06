@@ -66,7 +66,11 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
             let infoCtr = CarInfoInputController()
             self.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(infoCtr, animated:true)
-        }else {
+        } else if indexPath.row == 4 {
+            let rxMain = PeopleViewController()
+            self.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(rxMain, animated:true)
+        } else {
             let cell = tableView.cellForRow(at: indexPath)
             if cell?.accessoryType == UITableViewCell.AccessoryType.none {
                 cell?.accessoryType = .checkmark
