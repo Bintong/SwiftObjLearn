@@ -48,10 +48,42 @@ class CarInfoViewManager: NSObject {
         v.backgroundColor = UIColor.white
         bg_v .addSubview(v)
         
-        let 
+       
+        let label = UILabel.init()
+        label.text = title as String
+        label.textColor = UIColor(red: 0.13, green: 0.13, blue: 0.13, alpha: 1)
+        label.frame = CGRect(x: 12, y: 0 , width: 70, height: 49)
+        label.textAlignment = NSTextAlignment.left
+        label.font = UIFont(name: "PingFangSC-Regular", size: 14)
+        
+        v.addSubview(label)
+        
         
         return bg_v
     }
+    
+    class func createSetSeletedView(title:String, right:String) -> UIView {
+        let bg_v = UIView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 49));
+        bg_v.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1)
+        
+        let v = UIView.init(frame: CGRect(x: 12, y: 0, width: kScreenWidth - 24, height: 49))
+        v.backgroundColor = UIColor.white
+        bg_v .addSubview(v)
+        
+        
+        let label = UILabel.init()
+        label.text = title as String
+        label.textColor = UIColor(red: 0.13, green: 0.13, blue: 0.13, alpha: 1)
+        label.frame = CGRect(x: 12, y: 0 , width: 120, height: 49)
+        label.textAlignment = NSTextAlignment.left
+        label.font = UIFont(name: "PingFangSC-Regular", size: 14)
+        
+        v.addSubview(label)
+        
+        
+        return bg_v
+    }
+    
     
     class func createSelectedUsuallyView(title:String, right:String) -> UIView {
         let bg_v = UIView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 49));
@@ -78,11 +110,7 @@ class CarInfoViewManager: NSObject {
         let v = UIView.init(frame: CGRect(x: 12, y: 0, width: kScreenWidth - 24, height: 49))
         v.backgroundColor = UIColor.white
         bg_v .addSubview(v)
-//        let instance = CarInfoViewManager.sharedInstance
         
-//        let label = instance.makeInfoLabel(text: title, font:UIFont(name:"PingFang SC Regular", size: 14)!, textColor: UIColor(red: 0.13, green: 0.13, blue: 0.13, alpha: 1) ,frame: CGRect(x: 12, y: 0 , width: v.width - 24, height: 49))
-
-
         let label = UILabel.init()
         label.text = title as String
         label.textColor = UIColor(red: 0.13, green: 0.13, blue: 0.13, alpha: 1)

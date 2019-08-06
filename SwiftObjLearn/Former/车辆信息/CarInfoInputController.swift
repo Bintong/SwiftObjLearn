@@ -26,10 +26,8 @@ class CarInfoInputController: UIViewController,UITableViewDelegate,UITableViewDa
         
         //车长/车型
         
-        
-        
         let typeCarView = CarInfoViewManager.createSelectedPickItemView(title: "车长/车型", right: "")
-        let setUsuallyView = CarInfoViewManager.createSelectedPickItemView(title: "设置常用车辆", right: "")
+        let setUsuallyView = CarInfoViewManager.createSetSeletedView(title: "设置常用车辆", right: "")
         let dividView_2 = CarInfoViewManager.createDividView()
 
 
