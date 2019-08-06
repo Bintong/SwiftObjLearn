@@ -47,6 +47,9 @@ class CarInfoViewManager: NSObject {
         let v = UIView.init(frame: CGRect(x: 12, y: 0, width: kScreenWidth - 24, height: 49))
         v.backgroundColor = UIColor.white
         bg_v .addSubview(v)
+        
+        let 
+        
         return bg_v
     }
     
