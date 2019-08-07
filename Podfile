@@ -10,6 +10,8 @@ target 'SwiftObjLearn' do
   pod 'RxCocoa'
   pod 'RxSwift'
   pod 'SnapKit'
+  pod 'NSObject+Rx'
+
   # Pods for SwiftObjLearn
 
   target 'SwiftObjLearnTests' do

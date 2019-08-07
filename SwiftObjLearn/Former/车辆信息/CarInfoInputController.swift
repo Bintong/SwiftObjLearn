@@ -7,14 +7,19 @@
 //
 
 import UIKit
+import NSObject_Rx
 
 let kBottomHeight: CGFloat = 70
 
 class CarInfoInputController: UIViewController,UITableViewDelegate,UITableViewDataSource  {
     
     
-    var tableView :UITableView!
+    var tableView : UITableView!
     var views  : [UIView]  = []
+
+
+ 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1)
@@ -22,24 +27,45 @@ class CarInfoInputController: UIViewController,UITableViewDelegate,UITableViewDa
         self.buildContentViews()
         self.creatBottomView()
     }
+    
+    
+    lazy var carWidthView: CarInfoView = {
+        let  v =  CarInfoViewManager.createNormalInfoView(title: "车宽", placeHolder: "请输入车宽（米）")
+        return v
+    }()
+    
+    lazy var carheigtView: CarInfoView = {
+        let  v  = CarInfoViewManager.createNormalInfoView(title: "车高", placeHolder: "请输入车高（米）")
+        return v
+    }()
+    
+    lazy var heigthView: CarInfoView = {
+        let  v  = CarInfoViewManager.createNormalInfoView(title: "核定载重", placeHolder: "请输入核定载重（千克）")
+        return v
+    }()
+    
+    lazy var totoalNumView: CarInfoView = {
+        let  v  = CarInfoViewManager.createNormalInfoView(title: "车辆总量", placeHolder: "请输入车辆总重（千克）")
+        return v
+    }()
+    
+    lazy var numBearingView: CarInfoView = {
+        let  v  = CarInfoViewManager.createNormalInfoView(title: "轴数", placeHolder: "请输入轴数")
+        return v
+    }()
+    
+    
     func buildContentViews() {
         let headerImgs = CarInfoViewManager.createUploadImages()
         let carNumView = CarInfoViewManager.createNormalInfoView(title: "车牌号", placeHolder: "请先上传照片")
         let dividView_1 = CarInfoViewManager.createDividView()
         
         //车长/车型
-        
         let typeCarView = CarInfoViewManager.createSelectedPickItemView(title: "车长/车型", right: "")
         let setUsuallyView = CarInfoViewManager.createSetSeletedView(title: "设置常用车辆", right: "")
         let dividView_2 = CarInfoViewManager.createDividView()
 
-
-        let carheigtView = CarInfoViewManager.createNormalInfoView(title: "车高", placeHolder: "请输入车高（米）")
-        
-        let carWidthView = CarInfoViewManager.createNormalInfoView(title: "车宽", placeHolder: "请输入车宽（米）")
-        let heigthView = CarInfoViewManager.createNormalInfoView(title: "核定载重", placeHolder: "请输入核定载重（千克）")
-        let totoalNumView = CarInfoViewManager.createNormalInfoView(title: "车辆总量", placeHolder: "请输入车辆总重（千克）")
-        let numBearingView = CarInfoViewManager.createNormalInfoView(title: "轴数", placeHolder: "请输入轴数")
+       
         
         self.views.append(headerImgs)
         self.views.append(carNumView)
@@ -53,11 +79,17 @@ class CarInfoInputController: UIViewController,UITableViewDelegate,UITableViewDa
         self.views.append(totoalNumView)
         self.views.append(numBearingView)
     }
+    
+    func makeParameters() ->NSDictionary{
+        let airports: [String: String] = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
+        return airports as NSDictionary
+    }
 }
 
-
-
 extension CarInfoInputController{
+    
+    
+    
     func createUI()  {
         self.tableView = UITableView(frame: self.view.frame, style: .plain)
         self.tableView?.delegate = self
@@ -65,10 +97,6 @@ extension CarInfoInputController{
         self.tableView.separatorStyle = .none
         self.tableView.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1)
         self.tableView.height = kScreenHeight - kBottomHeight - 64
-//        let headerLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 230))
-//        headerLabel.text = "Header-----------"
-//        self.tableView?.tableHeaderView = headerLabel;
-//        self.tableView.tableFooterView = UIView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 1))
         self.view.addSubview(tableView)
     }
     
@@ -80,6 +108,10 @@ extension CarInfoInputController{
         button.setTitle("保存", for: .normal)
         button.backgroundColor = .red
         view.addSubview(button)
+        button.rx.tap.subscribe(onNext:  { recognizer in
+            print("点击")
+        }).disposed(by: rx.disposeBag)
+        
         self.view.addSubview(view)
     }
     
@@ -106,6 +138,10 @@ extension CarInfoInputController{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let view = self.views[indexPath.row]
         return view.height
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
     }
     
 }

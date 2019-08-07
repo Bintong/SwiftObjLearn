@@ -6,6 +6,8 @@ PODS:
   - Moya/Core (13.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 4.1)
+  - "NSObject+Rx (5.0.0)":
+    - RxSwift (~> 5.0)
   - Result (4.1.0)
   - RxCocoa (5.0.0):
     - RxRelay (~> 5)
@@ -19,6 +21,7 @@ PODS:
 DEPENDENCIES:
   - Kingfisher
   - Moya
+  - "NSObject+Rx"
   - RxCocoa
   - RxSwift
   - SnapKit
@@ -29,6 +32,7 @@ SPEC REPOS:
     - Alamofire
     - Kingfisher
     - Moya
+    - "NSObject+Rx"
     - Result
     - RxCocoa
     - RxRelay
@@ -40,6 +44,7 @@ SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   Kingfisher: 6fe5e67a90fd335e49b0f5c075ff55ac5ebedd94
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  "NSObject+Rx": 6151a97d171f7187c4183746acc42d9451952a7b
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
@@ -47,6 +52,6 @@ SPEC CHECKSUMS:
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: ff6a5f09f63be111e05a96cc97151adb65098ba1
+PODFILE CHECKSUM: 9585a86ff24404d52102bbd3b14536354616a815
 
-COCOAPODS: 1.7.3
+COCOAPODS: 1.7.5

@@ -8,11 +8,20 @@
 
 import UIKit
 
+
+class CarInfoView: UIView {
+   
+    var textfield = UITextField()
+     
+}
+
+
 class CarInfoViewManager: NSObject {
     
     static let sharedInstance = CarInfoViewManager()
     
     class func createUploadImages() -> UIView {
+        
         let bg_v = UIView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 276));
         bg_v.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1)
         
@@ -35,7 +44,7 @@ class CarInfoViewManager: NSObject {
         let button_4 = UIButton.init(frame: CGRect(x: button_1.right + 12, y: button_1.bottom + 12, width: (kScreenWidth - 60)/2, height: 100))
         button_4.backgroundColor = UIColor.red
         v.addSubview(button_4)
-         
+        
         return bg_v
         
     }
@@ -58,6 +67,11 @@ class CarInfoViewManager: NSObject {
         
         v.addSubview(label)
         
+        let rightIcon = UIImageView(image: UIImage(named: "icon_cellArrow-2"))
+        rightIcon.x = v.width - 25
+        rightIcon.y = 0
+        rightIcon.centerY = v.height/2
+        v .addSubview(rightIcon)
         
         return bg_v
     }
@@ -103,7 +117,7 @@ class CarInfoViewManager: NSObject {
         
     }
     
-    class func createNormalInfoView(title:String,placeHolder:String) -> UIView {
+    class func createNormalInfoView(title:String,placeHolder:String) -> CarInfoView {
         let bg_v = UIView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 49));
         bg_v.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1)
         
@@ -123,7 +137,12 @@ class CarInfoViewManager: NSObject {
         let textField = CarInfoViewManager.sharedInstance.makeTextField(placeHolder: placeHolder, target: AnyObject.self as AnyObject ,frame: CGRect(x: label.right + 12, y: 12, width: v.width - 24 - label.right, height: 36))
         textField.centerY = label.centerY
         v.addSubview(textField)
-        return bg_v
+        
+        
+        let infoV = CarInfoView()
+        infoV.textfield = textField
+        
+        return infoV
         
     }
     

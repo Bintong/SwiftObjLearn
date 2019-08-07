@@ -27,6 +27,7 @@
 		A68C206F22F96EDE003E9B03 /* DisposeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68C206D22F96EDE003E9B03 /* DisposeViewController.xib */; };
 		A68C207322F96F4D003E9B03 /* bindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C207122F96F4D003E9B03 /* bindViewController.swift */; };
 		A68C207422F96F4D003E9B03 /* bindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68C207222F96F4D003E9B03 /* bindViewController.xib */; };
+		A68C207622FADA3F003E9B03 /* CarInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C207522FADA3F003E9B03 /* CarInfoViewModel.swift */; };
 		A6C551EF22C5CDB700B1BAA2 /* Const_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C551EE22C5CDB700B1BAA2 /* Const_UI.swift */; };
 		A6C551F222C5E68000B1BAA2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C551F122C5E68000B1BAA2 /* LoginViewController.swift */; };
 		A6C551F422C5E9B500B1BAA2 /* NormalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C551F322C5E9B500B1BAA2 /* NormalTableViewCell.swift */; };
@@ -93,6 +94,7 @@
 		A68C206D22F96EDE003E9B03 /* DisposeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisposeViewController.xib; sourceTree = "<group>"; };
 		A68C207122F96F4D003E9B03 /* bindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bindViewController.swift; sourceTree = "<group>"; };
 		A68C207222F96F4D003E9B03 /* bindViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = bindViewController.xib; sourceTree = "<group>"; };
+		A68C207522FADA3F003E9B03 /* CarInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfoViewModel.swift; sourceTree = "<group>"; };
 		A6C551EE22C5CDB700B1BAA2 /* Const_UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const_UI.swift; sourceTree = "<group>"; };
 		A6C551F122C5E68000B1BAA2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A6C551F322C5E9B500B1BAA2 /* NormalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalTableViewCell.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			children = (
 				A61498DC22F8111F0036780F /* CarInfoInputController.swift */,
 				A61498DE22F8149D0036780F /* CarInfoViewManager.swift */,
+				A68C207522FADA3F003E9B03 /* CarInfoViewModel.swift */,
 			);
 			path = "车辆信息";
 			sourceTree = "<group>";
@@ -659,6 +662,7 @@
 				A61498FC22F9663D0036780F /* doOnViewController.swift in Sources */,
 				A61498F022F92FD90036780F /* PeopleModel.swift in Sources */,
 				A61498F222F930390036780F /* PeopleViewModel.swift in Sources */,
+				A68C207622FADA3F003E9B03 /* CarInfoViewModel.swift in Sources */,
 				A6D21ECF22C0D56D00A8D4DF /* PopView.swift in Sources */,
 				A6C551EF22C5CDB700B1BAA2 /* Const_UI.swift in Sources */,
 				A6C551F422C5E9B500B1BAA2 /* NormalTableViewCell.swift in Sources */,

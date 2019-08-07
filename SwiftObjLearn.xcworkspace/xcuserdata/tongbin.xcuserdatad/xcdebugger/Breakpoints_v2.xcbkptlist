@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftObjLearn/Former/LoginViewController.swift"
-            timestampString = "586803102.96149"
+            timestampString = "586689816.660257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
@@ -70,17 +70,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftObjLearn/Former/&#x8f66;&#x8f86;&#x4fe1;&#x606f;/CarInfoViewManager.swift"
-            timestampString = "586806678.392132"
+            timestampString = "586855466.26594"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
-            landmarkName = "CarInfoViewManager"
-            landmarkType = "3">
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "createDividView()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
