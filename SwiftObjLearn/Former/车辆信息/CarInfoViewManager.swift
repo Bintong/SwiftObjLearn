@@ -118,7 +118,7 @@ class CarInfoViewManager: NSObject {
     }
     
     class func createNormalInfoView(title:String,placeHolder:String) -> CarInfoView {
-        let bg_v = UIView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 49));
+        let bg_v = CarInfoView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 49));
         bg_v.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1)
         
         let v = UIView.init(frame: CGRect(x: 12, y: 0, width: kScreenWidth - 24, height: 49))
@@ -137,12 +137,7 @@ class CarInfoViewManager: NSObject {
         let textField = CarInfoViewManager.sharedInstance.makeTextField(placeHolder: placeHolder, target: AnyObject.self as AnyObject ,frame: CGRect(x: label.right + 12, y: 12, width: v.width - 24 - label.right, height: 36))
         textField.centerY = label.centerY
         v.addSubview(textField)
-        
-        
-        let infoV = CarInfoView()
-        infoV.textfield = textField
-        
-        return infoV
+        return bg_v
         
     }
     

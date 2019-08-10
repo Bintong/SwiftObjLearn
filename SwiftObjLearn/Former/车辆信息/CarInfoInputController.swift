@@ -12,13 +12,8 @@ import NSObject_Rx
 let kBottomHeight: CGFloat = 70
 
 class CarInfoInputController: UIViewController,UITableViewDelegate,UITableViewDataSource  {
-    
-    
     var tableView : UITableView!
     var views  : [UIView]  = []
-
-
- 
     
     override func viewDidLoad() {
         super.viewDidLoad()
