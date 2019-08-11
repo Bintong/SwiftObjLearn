@@ -23,6 +23,8 @@
 		A61498FC22F9663D0036780F /* doOnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61498FA22F9663D0036780F /* doOnViewController.swift */; };
 		A61498FD22F9663D0036780F /* doOnViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61498FB22F9663D0036780F /* doOnViewController.xib */; };
 		A63A9D4D22F9E88000C17B77 /* SnapKitTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63A9D4C22F9E88000C17B77 /* SnapKitTestController.swift */; };
+		A63A9D512300468700C17B77 /* SimpleValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63A9D4F2300468700C17B77 /* SimpleValidationViewController.swift */; };
+		A63A9D522300468700C17B77 /* SimpleValidationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A63A9D502300468700C17B77 /* SimpleValidationViewController.xib */; };
 		A68C206E22F96EDE003E9B03 /* DisposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C206C22F96EDE003E9B03 /* DisposeViewController.swift */; };
 		A68C206F22F96EDE003E9B03 /* DisposeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68C206D22F96EDE003E9B03 /* DisposeViewController.xib */; };
 		A68C207322F96F4D003E9B03 /* bindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C207122F96F4D003E9B03 /* bindViewController.swift */; };
@@ -90,6 +92,8 @@
 		A61498FA22F9663D0036780F /* doOnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doOnViewController.swift; sourceTree = "<group>"; };
 		A61498FB22F9663D0036780F /* doOnViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = doOnViewController.xib; sourceTree = "<group>"; };
 		A63A9D4C22F9E88000C17B77 /* SnapKitTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitTestController.swift; sourceTree = "<group>"; };
+		A63A9D4F2300468700C17B77 /* SimpleValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleValidationViewController.swift; sourceTree = "<group>"; };
+		A63A9D502300468700C17B77 /* SimpleValidationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleValidationViewController.xib; sourceTree = "<group>"; };
 		A68C206C22F96EDE003E9B03 /* DisposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposeViewController.swift; sourceTree = "<group>"; };
 		A68C206D22F96EDE003E9B03 /* DisposeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisposeViewController.xib; sourceTree = "<group>"; };
 		A68C207122F96F4D003E9B03 /* bindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bindViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 		A61498E222F917430036780F /* RxSwiftTestFiles */ = {
 			isa = PBXGroup;
 			children = (
+				A63A9D4E2300443800C17B77 /* RxLoginIn */,
 				A68C207022F96F3C003E9B03 /* bindto */,
 				A68C206722F96DED003E9B03 /* Dispose */,
 				A61498F922F9661D0036780F /* doOn */,
@@ -222,6 +227,15 @@
 				A63A9D4C22F9E88000C17B77 /* SnapKitTestController.swift */,
 			);
 			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		A63A9D4E2300443800C17B77 /* RxLoginIn */ = {
+			isa = PBXGroup;
+			children = (
+				A63A9D4F2300468700C17B77 /* SimpleValidationViewController.swift */,
+				A63A9D502300468700C17B77 /* SimpleValidationViewController.xib */,
+			);
+			path = RxLoginIn;
 			sourceTree = "<group>";
 		};
 		A68C206722F96DED003E9B03 /* Dispose */ = {
@@ -512,6 +526,7 @@
 				A6D21EA122C064CA00A8D4DF /* LaunchScreen.storyboard in Resources */,
 				A6D21E9E22C064CA00A8D4DF /* Assets.xcassets in Resources */,
 				A61498FD22F9663D0036780F /* doOnViewController.xib in Resources */,
+				A63A9D522300468700C17B77 /* SimpleValidationViewController.xib in Resources */,
 				A68C207422F96F4D003E9B03 /* bindViewController.xib in Resources */,
 				A61498F622F931810036780F /* PeopleViewController.xib in Resources */,
 				A61498E622F917780036780F /* ObervableViewController.xib in Resources */,
@@ -674,6 +689,7 @@
 				A6C9C9BF22C5A8D1004C1365 /* CustomCell.swift in Sources */,
 				A61498DF22F8149D0036780F /* CarInfoViewManager.swift in Sources */,
 				A6D21E9722C064C900A8D4DF /* FirstViewController.swift in Sources */,
+				A63A9D512300468700C17B77 /* SimpleValidationViewController.swift in Sources */,
 				A61498F822F94E810036780F /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
