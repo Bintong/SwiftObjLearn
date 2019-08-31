@@ -25,8 +25,7 @@ class SimpleValidationViewController: UIViewController {
         passwordValidOutlet.text = "Password has to be at least \(5) characters"
         
         // 用户名是否有效
-        let usrnameValid = usrnameOutlet.rx.text.orEmpty
-            .map {$0.count >= 5}.share(replay: 1)
+        let usrnameValid = usrnameOutlet.rx.text.orEmpty.map {$0.count >= 5}.share(replay: 1)
          // 用户名是否有效 -> 密码输入框是否可用
         usrnameValid.bind(to: passwordOutlet.rx.isEnabled).disposed(by: rx.disposeBag)
         // 用户名是否有效 -> 用户名提示语是否隐藏
@@ -43,7 +42,7 @@ class SimpleValidationViewController: UIViewController {
         
         doSomethingOutlet.rx.tap.bind( onNext :{ [weak self] in
             self?.showAlert()
-        })
+        })  
             .disposed(by: rx.disposeBag)
  
         
@@ -71,5 +70,7 @@ class SimpleValidationViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
 
 }
