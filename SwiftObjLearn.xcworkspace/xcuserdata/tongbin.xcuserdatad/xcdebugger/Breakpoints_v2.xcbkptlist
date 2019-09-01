@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftObjLearn/Former/LoginViewController.swift"
-            timestampString = "586803102.96149"
+            timestampString = "589013008.6553839"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "buildContent()"
             landmarkType = "7">
          </BreakpointContent>

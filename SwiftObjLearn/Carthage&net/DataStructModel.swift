@@ -18,7 +18,6 @@ struct DataStructModel {
         systemTime = jsonData["data"]["systemtime"].stringValue
         curTime = jsonData["data"]["curtime"].stringValue
         for detail in jsonData["data"]["playlist"].arrayValue {
-//
             let item = SongDetailModel(jsonData: detail)
             songDetails.append(item)
         }
