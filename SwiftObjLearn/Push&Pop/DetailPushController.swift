@@ -17,8 +17,22 @@ class DetailPushController: UIViewController,PopViewDelegate {
         
         self.makeLabels()
         let bt = self.makeButton(title: "Hello")
+        bt.addTarget(self, action:#selector(buttonClick_new(button:)), for: .touchUpInside)
+//        button.addTarget(self, action: #selector(buttonClick(_button:)), for: .touchUpInside)
+
         self.view.addSubview(bt)
     }
+    
+    @objc func buttonClick_new(button:UIButton) {
+        button.isSelected = !button.isSelected
+        if button.isSelected {
+            button.setTitle("Selected", for: .normal)
+        } else {
+            button.setTitle("No selected", for: .normal)
+        }
+    }
+    
+    
     func makeLabels(){
         let label = UILabel(frame: CGRect(x: 10, y: 100, width: 160, height: 30))
         label.backgroundColor = UIColor.green
@@ -30,12 +44,11 @@ class DetailPushController: UIViewController,PopViewDelegate {
     }
     
     func makeButton(title:String) -> UIButton {
-        let button = UIButton(frame: CGRect(x: 180, y: 100, width: 160, height: 40))
+        let button = UIButton(frame: CGRect(x: 180, y: 200, width: 160, height: 40))
         button.setTitle("Button First", for: .normal)
         button.layer.borderColor = UIColor.red.cgColor
         button.layer.borderWidth = 1.0
         button.setTitleColor(UIColor.red, for: .normal)
-        button.addTarget(self, action: #selector(buttonClick(_button:)), for: .touchUpInside)
     
         return button
     }
