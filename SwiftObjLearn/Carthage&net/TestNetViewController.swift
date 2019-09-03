@@ -39,7 +39,7 @@ class TestNetViewController: UIViewController,UITableViewDelegate,UITableViewDat
             switch result {
             case let .success(moyaResponse):
                 let data_net = moyaResponse.data
-                let code = moyaResponse.statusCode
+                _ = moyaResponse.statusCode
                 let json = JSON(data_net)
                 let model = DataStructModel(jsonData: json)
                 self.dataModel = model

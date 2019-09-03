@@ -49,6 +49,8 @@
 		A6D21EF122C3758100A8D4DF /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D21EF022C3758100A8D4DF /* AccountService.swift */; };
 		A6D21EF322C47DE800A8D4DF /* TestNetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D21EF222C47DE800A8D4DF /* TestNetViewController.swift */; };
 		A6D21EF922C4BCF500A8D4DF /* DataStructModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D21EF822C4BCF500A8D4DF /* DataStructModel.swift */; };
+		A6DCBF33231B6793001C0186 /* LoginViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DCBF32231B6793001C0186 /* LoginViewManager.swift */; };
+		A6DCBF36231D706C001C0186 /* SimpleValidationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DCBF35231D706C001C0186 /* SimpleValidationViewModel.swift */; };
 		E9846F8AA56E26962C3B1BC3 /* Pods_SwiftObjLearn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6166B514C6E22D5275D728C1 /* Pods_SwiftObjLearn.framework */; };
 /* End PBXBuildFile section */
 
@@ -135,6 +137,8 @@
 		A6D21EF022C3758100A8D4DF /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
 		A6D21EF222C47DE800A8D4DF /* TestNetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNetViewController.swift; sourceTree = "<group>"; };
 		A6D21EF822C4BCF500A8D4DF /* DataStructModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructModel.swift; sourceTree = "<group>"; };
+		A6DCBF32231B6793001C0186 /* LoginViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewManager.swift; sourceTree = "<group>"; };
+		A6DCBF35231D706C001C0186 /* SimpleValidationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleValidationViewModel.swift; sourceTree = "<group>"; };
 		C43E93C7378358EF6F59D0C1 /* Pods-SwiftObjLearnUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftObjLearnUITests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftObjLearnUITests/Pods-SwiftObjLearnUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -179,6 +183,7 @@
 		A61498E222F917430036780F /* RxSwiftTestFiles */ = {
 			isa = PBXGroup;
 			children = (
+				A6DCBF34231D704E001C0186 /* RxLogin2 */,
 				A63A9D4E2300443800C17B77 /* RxLoginIn */,
 				A68C207022F96F3C003E9B03 /* bindto */,
 				A68C206722F96DED003E9B03 /* Dispose */,
@@ -269,6 +274,7 @@
 			children = (
 				A609409F22F810DD008AB7B0 /* 车辆信息 */,
 				A6C551F122C5E68000B1BAA2 /* LoginViewController.swift */,
+				A6DCBF32231B6793001C0186 /* LoginViewManager.swift */,
 				A6C551F322C5E9B500B1BAA2 /* NormalTableViewCell.swift */,
 			);
 			path = Former;
@@ -399,6 +405,14 @@
 				A6D21EF822C4BCF500A8D4DF /* DataStructModel.swift */,
 			);
 			path = "Carthage&net";
+			sourceTree = "<group>";
+		};
+		A6DCBF34231D704E001C0186 /* RxLogin2 */ = {
+			isa = PBXGroup;
+			children = (
+				A6DCBF35231D706C001C0186 /* SimpleValidationViewModel.swift */,
+			);
+			path = RxLogin2;
 			sourceTree = "<group>";
 		};
 		B234C4993FAF4957C85490BA /* Pods */ = {
@@ -668,6 +682,7 @@
 				A68C206E22F96EDE003E9B03 /* DisposeViewController.swift in Sources */,
 				A61498F522F931810036780F /* PeopleViewController.swift in Sources */,
 				A68C207322F96F4D003E9B03 /* bindViewController.swift in Sources */,
+				A6DCBF36231D706C001C0186 /* SimpleValidationViewModel.swift in Sources */,
 				A6D21EF322C47DE800A8D4DF /* TestNetViewController.swift in Sources */,
 				A6D21ECC22C0B0CD00A8D4DF /* MyNavViewController.swift in Sources */,
 				A61498EA22F92D9A0036780F /* SubscribViewController.swift in Sources */,
@@ -688,6 +703,7 @@
 				A61498DD22F8111F0036780F /* CarInfoInputController.swift in Sources */,
 				A6C9C9BF22C5A8D1004C1365 /* CustomCell.swift in Sources */,
 				A61498DF22F8149D0036780F /* CarInfoViewManager.swift in Sources */,
+				A6DCBF33231B6793001C0186 /* LoginViewManager.swift in Sources */,
 				A6D21E9722C064C900A8D4DF /* FirstViewController.swift in Sources */,
 				A63A9D512300468700C17B77 /* SimpleValidationViewController.swift in Sources */,
 				A61498F822F94E810036780F /* DataModel.swift in Sources */,

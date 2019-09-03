@@ -11,7 +11,8 @@ import UIKit
 class LoginViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     var tableView :UITableView!
     var views  : [UIView]  = []
-
+    var v = CustomView()
+    var  v2 = CustomView()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white;
@@ -24,39 +25,27 @@ class LoginViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         self.tableView = UITableView(frame: self.view.frame, style: .plain)
         self.tableView?.delegate = self;
         self.tableView?.dataSource = self;
-        
-        let headerLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 230))
-        headerLabel.text = "Header-----------"
-        self.tableView?.tableHeaderView = headerLabel;
         self.tableView.tableFooterView = UIView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 1))
         self.view.addSubview(tableView)
+        let bottom = UIButton.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 66))
+        bottom.setTitle("提交", for: .normal)
+        bottom.setTitleColor(.red, for: .normal)
+        bottom.addTarget(self, action: #selector(submit(button:)), for: .touchUpInside)
+        self.tableView.tableFooterView = bottom
+    }
+    
+    
+    @objc func submit(button:UIButton) {
+        print(self.v.textfield.text ?? "defualt", self.v2.textfield.text ?? "defualt")
     }
     
     private func buildContent() {
-        let view1 = UIView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 40))
-        view1.backgroundColor = UIColor.red
-        let view2 = UIView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 60))
-        view2.backgroundColor = UIColor.green
-        let view3 = UIView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 80))
-        view3.backgroundColor = UIColor.black
-        let view4 = UIView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 100))
-        view4.backgroundColor = UIColor.orange
-        let view5 = UIView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 120))
-        view5.backgroundColor = UIColor.purple
-        let view6 = UIView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 140))
-        view6.backgroundColor = UIColor.yellow
-        let view7 = UIView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 30))
-        view7.backgroundColor = UIColor.blue
-        
-        self.views.append(view1)
-        self.views.append(view2)
-        self.views.append(view3)
-
-        self.views.append(view4)
-        self.views.append(view5)
-        self.views.append(view6)
-        self.views.append(view7)
-
+        self.v = LoginViewManager.makeTextLoginView(title: "USERNAME", placeHolder:"INPUTYOURUSERNAME" )
+        self.v2 = LoginViewManager.makeTextLoginView(title: "PASSWORD", placeHolder:"INPUTYOURPASSWORD" )
+        let divid = LoginViewManager.makeDividView()
+        self.views.append(v)
+        self.views.append(divid)
+        self.views.append(v2)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
