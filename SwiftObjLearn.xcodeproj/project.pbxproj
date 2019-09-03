@@ -25,6 +25,9 @@
 		A63A9D4D22F9E88000C17B77 /* SnapKitTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63A9D4C22F9E88000C17B77 /* SnapKitTestController.swift */; };
 		A63A9D512300468700C17B77 /* SimpleValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63A9D4F2300468700C17B77 /* SimpleValidationViewController.swift */; };
 		A63A9D522300468700C17B77 /* SimpleValidationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A63A9D502300468700C17B77 /* SimpleValidationViewController.xib */; };
+		A64A83D8231E568900AAFD4D /* PopSelectImgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64A83D7231E568900AAFD4D /* PopSelectImgView.swift */; };
+		A64A83DB231E656600AAFD4D /* temp1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A64A83DA231E656600AAFD4D /* temp1.jpeg */; };
+		A64A83DD231E66FF00AAFD4D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64A83DC231E66FF00AAFD4D /* Config.swift */; };
 		A68C206E22F96EDE003E9B03 /* DisposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C206C22F96EDE003E9B03 /* DisposeViewController.swift */; };
 		A68C206F22F96EDE003E9B03 /* DisposeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68C206D22F96EDE003E9B03 /* DisposeViewController.xib */; };
 		A68C207322F96F4D003E9B03 /* bindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C207122F96F4D003E9B03 /* bindViewController.swift */; };
@@ -96,6 +99,9 @@
 		A63A9D4C22F9E88000C17B77 /* SnapKitTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitTestController.swift; sourceTree = "<group>"; };
 		A63A9D4F2300468700C17B77 /* SimpleValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleValidationViewController.swift; sourceTree = "<group>"; };
 		A63A9D502300468700C17B77 /* SimpleValidationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleValidationViewController.xib; sourceTree = "<group>"; };
+		A64A83D7231E568900AAFD4D /* PopSelectImgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopSelectImgView.swift; sourceTree = "<group>"; };
+		A64A83DA231E656600AAFD4D /* temp1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = temp1.jpeg; sourceTree = "<group>"; };
+		A64A83DC231E66FF00AAFD4D /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		A68C206C22F96EDE003E9B03 /* DisposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposeViewController.swift; sourceTree = "<group>"; };
 		A68C206D22F96EDE003E9B03 /* DisposeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisposeViewController.xib; sourceTree = "<group>"; };
 		A68C207122F96F4D003E9B03 /* bindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bindViewController.swift; sourceTree = "<group>"; };
@@ -243,6 +249,14 @@
 			path = RxLoginIn;
 			sourceTree = "<group>";
 		};
+		A64A83D9231E654A00AAFD4D /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				A64A83DA231E656600AAFD4D /* temp1.jpeg */,
+			);
+			path = imgs;
+			sourceTree = "<group>";
+		};
 		A68C206722F96DED003E9B03 /* Dispose */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,6 +327,7 @@
 		A6D21E9322C064C900A8D4DF /* SwiftObjLearn */ = {
 			isa = PBXGroup;
 			children = (
+				A64A83D9231E654A00AAFD4D /* imgs */,
 				A63A9D4B22F9E84600C17B77 /* SnapKit */,
 				A61498E222F917430036780F /* RxSwiftTestFiles */,
 				A6C551F022C5E65700B1BAA2 /* Former */,
@@ -330,6 +345,7 @@
 				A6D21E9D22C064CA00A8D4DF /* Assets.xcassets */,
 				A6D21E9F22C064CA00A8D4DF /* LaunchScreen.storyboard */,
 				A6D21EA222C064CA00A8D4DF /* Info.plist */,
+				A64A83DC231E66FF00AAFD4D /* Config.swift */,
 			);
 			path = SwiftObjLearn;
 			sourceTree = "<group>";
@@ -364,6 +380,7 @@
 			isa = PBXGroup;
 			children = (
 				A6D21ECE22C0D56D00A8D4DF /* PopView.swift */,
+				A64A83D7231E568900AAFD4D /* PopSelectImgView.swift */,
 			);
 			path = CustomPopView;
 			sourceTree = "<group>";
@@ -546,6 +563,7 @@
 				A61498E622F917780036780F /* ObervableViewController.xib in Resources */,
 				A68C206F22F96EDE003E9B03 /* DisposeViewController.xib in Resources */,
 				A61498EB22F92D9A0036780F /* SubscribViewController.xib in Resources */,
+				A64A83DB231E656600AAFD4D /* temp1.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,7 +718,9 @@
 				A63A9D4D22F9E88000C17B77 /* SnapKitTestController.swift in Sources */,
 				A6D21ED222C1C2E900A8D4DF /* UIView+SetRect.swift in Sources */,
 				A6D21E9522C064C900A8D4DF /* AppDelegate.swift in Sources */,
+				A64A83D8231E568900AAFD4D /* PopSelectImgView.swift in Sources */,
 				A61498DD22F8111F0036780F /* CarInfoInputController.swift in Sources */,
+				A64A83DD231E66FF00AAFD4D /* Config.swift in Sources */,
 				A6C9C9BF22C5A8D1004C1365 /* CustomCell.swift in Sources */,
 				A61498DF22F8149D0036780F /* CarInfoViewManager.swift in Sources */,
 				A6DCBF33231B6793001C0186 /* LoginViewManager.swift in Sources */,

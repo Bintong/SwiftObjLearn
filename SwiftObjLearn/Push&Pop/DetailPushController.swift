@@ -8,7 +8,9 @@
 
 import UIKit
 
-class DetailPushController: UIViewController,PopViewDelegate {
+class DetailPushController: UIViewController,PopSelectImgViewDelegate {
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,9 +19,7 @@ class DetailPushController: UIViewController,PopViewDelegate {
         
         self.makeLabels()
         let bt = self.makeButton(title: "Hello")
-        bt.addTarget(self, action:#selector(buttonClick_new(button:)), for: .touchUpInside)
-//        button.addTarget(self, action: #selector(buttonClick(_button:)), for: .touchUpInside)
-
+        bt.addTarget(self, action: #selector(buttonClick(_button:)), for: .touchUpInside)
         self.view.addSubview(bt)
     }
     
@@ -56,28 +56,21 @@ class DetailPushController: UIViewController,PopViewDelegate {
     
     @objc func buttonClick(_button:UIButton){
         NSLog("button clicked")
-        let pop = PopView.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
-        pop.contentView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 200))
-        pop.contentView?.backgroundColor = UIColor.orange
-        pop.showInWindow(num: 5)
-        pop.callBackBlock {
-            (tag) in print(tag)
-        }
-        pop.delegate = self
+        PopSelectImgView.default.showInWindow(imageName: "temp1.jpeg")
+        PopSelectImgView.default.delegate = self
     }
     
-    func function_one(strMessage: String) {
-        print(strMessage)
+    func alertActionLibrary() {
+        print("图片库")
+    }
+    
+    func alertActionCancel() {
+        print("取消")
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func alertActionTakePhoto() {
+        print("照相")
     }
-    */
+   
 
 }
